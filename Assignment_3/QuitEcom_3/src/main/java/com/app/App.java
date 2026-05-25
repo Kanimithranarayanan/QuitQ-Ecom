@@ -27,10 +27,9 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=================================");
-        System.out.println("     QUITQ PRODUCT SYSTEM");
-        System.out.println("=================================");
-
+      
+        System.out.println("QUITQ PRODUCT SYSTEM");
+       
         System.out.println("Enter Username:");
         String username = sc.next();
 
@@ -41,21 +40,18 @@ public class App {
 
             User user = authDao.login(username, password);
 
-            System.out.println("---------------------------------");
+           
             System.out.println("Login Successful");
             System.out.println("Welcome " + username);
-            System.out.println("---------------------------------");
 
             while (true) {
 
-                System.out.println("\n========= MENU =========");
+                System.out.println("\nMENU");
                 System.out.println("1. Add Product");
                 System.out.println("2. View All Products");
                 System.out.println("3. Update Product");
                 System.out.println("4. Delete Product");
                 System.out.println("0. Exit");
-                System.out.println("========================");
-
                 System.out.println("Enter Choice:");
                 int op = sc.nextInt();
 
@@ -87,9 +83,6 @@ public class App {
                         int categoryId = sc.nextInt();
 
                         Category category = new Category();
-
-                        // setting category id
-                        // because product table uses foreign key
                         try {
                             java.lang.reflect.Field field =
                                     Category.class.getDeclaredField("id");
@@ -150,8 +143,6 @@ public class App {
 
                             p.setProductName(newName);
                             p.setPrice(newPrice);
-
-                            // stock setter if available
                             try {
                                 java.lang.reflect.Method method =
                                         Product.class.getMethod(
