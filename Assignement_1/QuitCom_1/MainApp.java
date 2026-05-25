@@ -13,13 +13,8 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        // Create SessionFactory
         SessionFactory factory = HibernateConfig.getSessionFactory();
-
-        // Open Session
         Session session = factory.openSession();
-
-        // DAO Objects
         CategoryDaoImpl categoryDao = new CategoryDaoImpl(session);
         UserDaoImpl userDao = new UserDaoImpl(session);
         ProductDaoImpl productDao = new ProductDaoImpl(session);
@@ -28,25 +23,16 @@ public class MainApp {
 
         try {
 
-            // ==========================
-            // INSERT CATEGORY
-            // ==========================
-
             Category category = new Category();
             category.setCategoryName("Electronics");
 
             categoryDao.insert(category);
-
-            // ==========================
-            // INSERT SELLER
-            // ==========================
-
             User seller = new User();
 
             seller.setUsername("electronics_hub");
             seller.setPassword("seller123");
 
-            // UNIQUE EMAIL
+           
             seller.setEmail("sales" + System.currentTimeMillis() + "@ehub.com");
 
             seller.setRole("seller");
@@ -56,16 +42,10 @@ public class MainApp {
 
             userDao.insert(seller);
 
-            // ==========================
-            // INSERT CUSTOMER
-            // ==========================
-
             User customer = new User();
 
             customer.setUsername("john_customer");
-            customer.setPassword("john123");
-
-            // UNIQUE EMAIL
+            customer.setPassword("john123");  
             customer.setEmail("john" + System.currentTimeMillis() + "@gmail.com");
 
             customer.setRole("customer");
@@ -74,11 +54,6 @@ public class MainApp {
             customer.setAddress("Bangalore");
 
             userDao.insert(customer);
-
-            // ==========================
-            // INSERT PRODUCT
-            // ==========================
-
             Product product = new Product();
 
             product.setProductName("Gaming Laptop");
@@ -91,10 +66,6 @@ public class MainApp {
 
             productDao.insert(product);
 
-            // ==========================
-            // INSERT CART
-            // ==========================
-
             Cart cart = new Cart();
 
             cart.setQuantity(2);
@@ -102,11 +73,6 @@ public class MainApp {
             cart.setProduct(product);
 
             cartDao.insert(cart);
-
-            // ==========================
-            // INSERT ORDER
-            // ==========================
-
             Orders order = new Orders();
 
             order.setUser(customer);
@@ -116,10 +82,6 @@ public class MainApp {
             order.setShippingAddress("Chennai");
 
             ordersDao.insert(order);
-
-            // ==========================
-            // FETCH ALL USERS
-            // ==========================
 
             System.out.println("\n===== USERS =====");
 
@@ -134,10 +96,6 @@ public class MainApp {
                 );
             }
 
-            // ==========================
-            // FETCH PRODUCT BY ID
-            // ==========================
-
             System.out.println("\n===== PRODUCT =====");
 
             Product fetchedProduct = productDao.getById(product.getId());
@@ -151,19 +109,12 @@ public class MainApp {
                 );
             }
 
-            // ==========================
-            // UPDATE PRODUCT
-            // ==========================
-
             fetchedProduct.setPrice(90000);
 
             productDao.update(fetchedProduct);
 
             System.out.println("\nProduct Updated");
 
-            // ==========================
-            // DELETE CART
-            // ==========================
 
             cartDao.delete(cart.getId());
 
