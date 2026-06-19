@@ -2,94 +2,97 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllData } from "../store/action/characterAction";
 
-const CharacterList = () => {
-    const dispatch = useDispatch();
-    const {characters} =
-    useSelector(state => state.characters);
-    const [page, setPage] = useState(1);
-    const totalPages = 20;
+function Character() {
 
- useEffect(() => {
-     dispatch(getAllData(page));
-    }, [page]);
+    const dispatch = useDispatch();
+
+    const characters =
+        useSelector(state => state.characters.characters);
+
+    const totalPages =
+        useSelector(state => state.characters.totalPages);
+
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const size = 20;
+
+    useEffect(() => {
+        dispatch(getAllData(currentPage));
+    }, [dispatch, currentPage]);
+
     return (
         <div className="container mt-4">
-            <h1>All Characters</h1>
-       <table className="table table-bordered">
+
+            <h2 className="mb-3">All Characters</h2>
+
+            <table className="table table-bordered table-striped">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Name</th>
                         <th>Status</th>
                         <th>Species</th>
-                        <th>Origin</th>
-                        <th>Location</th>
+                        <th>Origin Name</th>
+                        <th>Location Name</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     {
                         characters.map((c, index) => (
-
-                            <tr key={index}>
-
+                            <tr key={c.id}>
+                                <td>
+                                    {index + 1 + ((currentPage - 1) * size)}
+                                </td>
                                 <td>{c.name}</td>
-
                                 <td>{c.status}</td>
-
                                 <td>{c.species}</td>
-
                                 <td>{c.origin.name}</td>
-
                                 <td>{c.location.name}</td>
-
                             </tr>
-
                         ))
                     }
-
                 </tbody>
-
             </table>
 
-            <div className="d-flex justify-content-center mt-3">
+            <nav>
+                <ul className="pagination justify-content-center">
 
-                <button
-                    className="btn btn-primary"
-                    disabled={page === 1}
-                    onClick={() => setPage(page - 1)}
-                >
-                    Previous
-                </button>
-                {
-                    [...Array(totalPages)].map((_, index) => (
-
+                    <li className="page-item">
                         <button
-                            key={index}
-                            className={`btn me-1 ${
-                                page === index + 1
-                                    ? "btn-dark"
-                                    : "btn-secondary"
-                            }`}
-                            onClick={() => setPage(index + 1)}
+                            className="page-link"
+                            disabled={currentPage === 1}
+                            onClick={() =>
+                                setCurrentPage(currentPage - 1)
+                            }
                         >
-                            {index + 1}
+                            Previous
                         </button>
+                    </li>
 
-                    ))
-                }
+                    <li className="page-item active">
+                        <button className="page-link">
+                            {currentPage}
+                        </button>
+                    </li>
 
-                <button
-                    className="btn btn-primary"
-                    disabled={page === totalPages}
-                    onClick={() => setPage(page + 1)}
-                >
-                    Next
-                </button>
+                    <li className="page-item">
+                        <button
+                            className="page-link"
+                            disabled={currentPage === totalPages}
+                            onClick={() =>
+                                setCurrentPage(currentPage + 1)
+                            }
+                        >
+                            Next
+                        </button>
+                    </li>
 
-            </div>
+                </ul>
+            </nav>
 
         </div>
     );
-};
+}
 
-export default CharacterList;
+export default Character;
