@@ -1,20 +1,15 @@
 import axios from "axios";
 
 export const getAllData = (page) => {
-
-    return async (dispatch) => {
-
-        const api =
-            `https://rickandmortyapi.com/api/character?page=${page}`;
-
-        const response = await axios.get(api);
-
-        dispatch({
-            type: "GET_ALL",
-            payload: {
-                characters: response.data.results,
-                totalPages: response.data.info.pages
-            }
-        });
+  //gets page num
+  return async (dispatch) => {
+    const response = await axios.get(
+      `https://rickandmortyapi.com/api/character/?page=${page + 1}`
+    ); 
+    let action = {
+      type: "GET_ALL",
+      payload: response.data, 
     };
+    dispatch(action); 
+  };
 };
