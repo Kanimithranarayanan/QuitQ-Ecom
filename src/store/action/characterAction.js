@@ -5,15 +5,16 @@ export const getAllData = (page) => {
     return async (dispatch) => {
 
         const api =
-            `https://rickandmortyapi.com/api/character/?page=${page}`;
+            `https://rickandmortyapi.com/api/character?page=${page}`;
 
         const response = await axios.get(api);
 
-        let action = {
+        dispatch({
             type: "GET_ALL",
-            payload: response.data.results
-        };
-
-        dispatch(action);
+            payload: {
+                characters: response.data.results,
+                totalPages: response.data.info.pages
+            }
+        });
     };
 };
