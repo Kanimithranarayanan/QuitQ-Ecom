@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bd046be-abeb-4e39-8a9b-12a19fdb0d7a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../practice-spring/practice-spring/src/main/java/com/cms/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice-spring/practice-spring/src/main/java/com/cms/entity/Employee.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3EOgaJPkx027qufcrWnxWfbUxnX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Prctice-SpringBoot.executor": "Run",
+    "JUnit.CategoryServiceTest.executor": "Run",
+    "JUnit.CategoryServiceTest.getAllCategories_MustReturnSomething.executor": "Run",
+    "JUnit.PracticeSpringApplicationTests.executor": "Run",
+    "JUnit.ProductServiceTest.addProduct_mustCallSaveOnlyOnce.executor": "Run",
+    "JUnit.ProductServiceTest.addProduct_mustSaveAndReturnDto.executor": "Run",
+    "JUnit.ProductServiceTest.deleteProduct_mustDeleteWhenNoDependenciesExist.executor": "Run",
+    "JUnit.ProductServiceTest.deleteProduct_throwsWhenProductDoesNotExist.executor": "Run",
+    "JUnit.ProductServiceTest.executor": "Run",
+    "JUnit.ProductServiceTest.getAllProducts_MustReturnSomething.executor": "Run",
+    "JUnit.ProductServiceTest.getAllProducts_ReturnsEmptyList.executor": "Run",
+    "JUnit.ProductServiceTest.getById_productDoesNotExist.executor": "Run",
+    "JUnit.ProductServiceTest.getById_productExists.executor": "Run",
+    "Maven.EcommerceApplication [clean].executor": "Run",
+    "Maven.EcommerceApplication [install].executor": "Run",
+    "Maven.EcommerceApplication [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.PracticeSpringApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Coding__Challenge__1",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ELCOT/Downloads/EcomApplicationBackend/backend",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "copyright",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.PracticeSpringApplication">
+    <configuration name="Prctice-SpringBoot" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.quitq.Ecom.PracticeSpringApplication" />
+      <module name="EcommerceApplicationUpdated" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.addProduct_mustCallSaveOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplicationUpdated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quitq.Ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quitq.Ecom" />
+      <option name="MAIN_CLASS_NAME" value="com.quitq.Ecom.ProductServiceTest" />
+      <option name="METHOD_NAME" value="addProduct_mustCallSaveOnlyOnce" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.addProduct_mustSaveAndReturnDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplicationUpdated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quitq.Ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quitq.Ecom" />
+      <option name="MAIN_CLASS_NAME" value="com.quitq.Ecom.ProductServiceTest" />
+      <option name="METHOD_NAME" value="addProduct_mustSaveAndReturnDto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.deleteProduct_mustDeleteWhenNoDependenciesExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplicationUpdated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quitq.Ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quitq.Ecom" />
+      <option name="MAIN_CLASS_NAME" value="com.quitq.Ecom.ProductServiceTest" />
+      <option name="METHOD_NAME" value="deleteProduct_mustDeleteWhenNoDependenciesExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.deleteProduct_throwsWhenProductDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplicationUpdated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quitq.Ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quitq.Ecom" />
+      <option name="MAIN_CLASS_NAME" value="com.quitq.Ecom.ProductServiceTest" />
+      <option name="METHOD_NAME" value="deleteProduct_throwsWhenProductDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.getById_productDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplicationUpdated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quitq.Ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quitq.Ecom" />
+      <option name="MAIN_CLASS_NAME" value="com.quitq.Ecom.ProductServiceTest" />
+      <option name="METHOD_NAME" value="getById_productDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="EcommerceApplicationUpdated" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.quitq.Ecom.PracticeSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Prctice-SpringBoot" />
+      <item itemvalue="JUnit.ProductServiceTest.addProduct_mustCallSaveOnlyOnce" />
+      <item itemvalue="JUnit.ProductServiceTest.addProduct_mustSaveAndReturnDto" />
+      <item itemvalue="JUnit.ProductServiceTest.deleteProduct_mustDeleteWhenNoDependenciesExist" />
+      <item itemvalue="JUnit.ProductServiceTest.deleteProduct_throwsWhenProductDoesNotExist" />
+      <item itemvalue="JUnit.ProductServiceTest.getById_productDoesNotExist" />
+      <item itemvalue="Spring Boot.PracticeSpringApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductServiceTest.getById_productDoesNotExist" />
+        <item itemvalue="JUnit.ProductServiceTest.addProduct_mustSaveAndReturnDto" />
+        <item itemvalue="JUnit.ProductServiceTest.addProduct_mustCallSaveOnlyOnce" />
+        <item itemvalue="JUnit.ProductServiceTest.deleteProduct_mustDeleteWhenNoDependenciesExist" />
+        <item itemvalue="JUnit.ProductServiceTest.deleteProduct_throwsWhenProductDoesNotExist" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bd046be-abeb-4e39-8a9b-12a19fdb0d7a" name="Changes" comment="" />
+      <created>1780055091492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780055091492</updated>
+      <workItem from="1780055092946" duration="1095000" />
+      <workItem from="1780066032581" duration="3286000" />
+      <workItem from="1780114655166" duration="1223000" />
+      <workItem from="1780133212562" duration="6170000" />
+      <workItem from="1780145478247" duration="13000" />
+      <workItem from="1780235930324" duration="2031000" />
+      <workItem from="1780245154234" duration="956000" />
+      <workItem from="1780500963696" duration="7734000" />
+      <workItem from="1780510562822" duration="272000" />
+      <workItem from="1780511062809" duration="2177000" />
+      <workItem from="1780548841367" duration="108000" />
+      <workItem from="1780583268412" duration="4769000" />
+      <workItem from="1780589551910" duration="11000" />
+      <workItem from="1780591030946" duration="2123000" />
+      <workItem from="1780629758906" duration="218000" />
+      <workItem from="1780716510220" duration="3574000" />
+      <workItem from="1780742789860" duration="4633000" />
+      <workItem from="1780847587957" duration="5013000" />
+      <workItem from="1780852735467" duration="138000" />
+      <workItem from="1780986186910" duration="21000" />
+      <workItem from="1781067641191" duration="4150000" />
+      <workItem from="1781076542189" duration="1924000" />
+      <workItem from="1781082177431" duration="3000000" />
+      <workItem from="1781097695957" duration="7318000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
